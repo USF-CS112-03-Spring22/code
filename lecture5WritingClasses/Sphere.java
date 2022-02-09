@@ -10,6 +10,10 @@ public class Sphere {
 		radius = r;
 	}
 
+	public double getRadius() {
+		return radius;
+	}
+	
 	public double computeVolume() {
 		return (4.0/3.0)* Math.PI * Math.pow(radius, 3);
 	}

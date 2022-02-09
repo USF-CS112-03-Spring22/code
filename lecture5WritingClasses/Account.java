@@ -68,8 +68,10 @@ public class Account {
      * @return a string with the info about the account
      */
     public String toString()  {
+        //return name + ": " + balance;
         NumberFormat fmt = NumberFormat.getCurrencyInstance();
-        return (acctNumber + "\t" + name + "\t" + fmt.format(balance));
+        String formattedBalance = fmt.format(balance);
+        return (acctNumber + "\t" + name + "\t" + formattedBalance);
     }
 
 }
